@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index3</title>
+    <style>
+        * {
+    box-sizing: border-box;
+        }
+
+        body {
+            background-color: #014040;
+            font-family: Arial, sans-serif; 
+        }
+
+        a {
+            color: currentColor;
+            text-decoration: none;
+            transition: color 0.3s ease; 
+        }
+
+        a:hover {
+            color: #e0e0e0; 
+        }
+
+        .event {
+            max-width: 600px;
+            margin: 40px 0 0 10px;
+            padding: 0 20px; 
+        }
+
+        .container {
+            font-size: 1rem;
+            color: #6f7b7b;
+        }
+
+        .title {
+            color: white;
+            font-size: 1.6rem; 
+            font-weight: bold;
+            margin-bottom: 20px; 
+            max-width: 450px;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+            margin-top: 30px; 
+            white-space: nowrap;
+        }
+
+        .date {
+            display: flex;
+            flex-direction: column;
+            padding: 10px; 
+        }
+
+        .dates {
+            display: flex;
+            gap: 15px;
+            margin: 1.3rem;
+        }
+
+        .emblem-img {
+            width: 80px; 
+            height: auto;
+        }
+
+        .label {
+            font-size: 0.9rem; 
+            color: #999; 
+            margin-bottom: 5px; 
+        }
+
+        .text,
+        .link,
+        .time {
+            color: white;
+            font-weight: 500; 
+        }
+
+        .breadcrumbs {
+            font-size: 1rem;
+        }
+
+        .i {
+            transition: color 0.3s ease; 
+        }
+
+        .i:hover {
+            color: #fff; 
+        }
+        @media screen and (max-width: 600px) {
+            .event {
+            margin: 0 -20px;
+            }
+            .emblem-img {
+                width: 100px;
+                height: auto;
+            }
+
+            .date {
+                font-size: 1.1em;
+                min-width: 150px;
+            }
+
+            .breadcrumbs {
+                font-size: 1.8em;
+            }
+            .speaker { order: 2; }
+            .date { order: 4; }
+            .feedback { order: 3; }
+            .updated { order: 1; }
+
+            .dates {
+                display: flex;
+                flex-wrap: wrap; 
+                gap: 15px; 
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <section class="event">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a class="i" href="#">Home</a> /
+                <a class="i" href="#">Articles</a> /
+            </nav>
+
+            <header class="title">
+                <h1>The Difference Between Responsive and Adaptive Design</h1>
+            </header>
+
+            <div class="meta">
+                <div class="emblem">
+                    <img class="emblem-img" src="emblem.png" alt="Icon event">
+                </div>
+
+                <div class="dates">
+                    <div class="date speaker">
+                        <span class="label">Author</span>
+                        <span class="text">Geoff Graham</span>
+                    </div>
+                    <div class="date feedback">
+                        <span class="label">49 Comments</span>
+                       <span class="link"> <a href="#">Go to comments</a></span>
+                    </div>
+                    <div class="date date">
+                        <span class="label">Published</span>
+                        <span class="time" datetime="2018-11-11">Nov 11, 2018</span>
+                    </div>
+                    <div class="date updated">
+                        <span class="label">Updated</span>
+                        <span class="text">Nov 17, 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
